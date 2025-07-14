@@ -84,8 +84,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
               onPressed: _register,
               child: const Text('Registrar'),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green, // Fondo verde
-                foregroundColor: Colors.white, // Texto blanco (opcional)
+                backgroundColor: Colors.green,
+                foregroundColor: Colors.white,
               ),
             ),
           ],

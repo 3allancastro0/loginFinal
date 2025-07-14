@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
       body: const Center(
         child: Text(
           '¡Bienvenido!',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
         ),
       ),
     );
