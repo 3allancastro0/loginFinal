@@ -51,7 +51,18 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Inicio de Sesión')),
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text(
+          'Inicio de Sesión',
+          style: TextStyle(
+            fontSize: 37,
+            fontFamily: 'Roboto',
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        foregroundColor: Colors.green,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: ListView(
@@ -73,10 +84,18 @@ class _LoginScreenState extends State<LoginScreen> {
             ElevatedButton(
               onPressed: _login,
               child: const Text('Iniciar sesión'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green, // Fondo verde
+                foregroundColor: Colors.white, // Texto blanco (opcional)
+              ),
             ),
             TextButton(
               onPressed: () => context.go('/register'),
               child: const Text('¿No tienes cuenta? Regístrate'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+              ),
             ),
           ],
         ),
